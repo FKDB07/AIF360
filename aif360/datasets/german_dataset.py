@@ -65,7 +65,7 @@ class GermanDataset(StandardDataset):
         """
 
         filepath = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                '..', 'data', 'raw', 'german', 'german.data')
+                                '..', 'data', 'raw', 'german', 'german2.data')
         # as given by german.doc
         column_names = ['status', 'month', 'credit_history',
             'purpose', 'credit_amount', 'savings', 'employment',
@@ -80,7 +80,7 @@ class GermanDataset(StandardDataset):
         except IOError as err:
             print("IOError: {}".format(err))
             print("To use this class, please download the following files:")
-            print("\n\thttps://archive.ics.uci.edu/ml/machine-learning-databases/statlog/german/german.data")
+            print("\n\thttps://archive.ics.uci.edu/ml/machine-learning-databases/statlog/german/german2.data")
             print("\thttps://archive.ics.uci.edu/ml/machine-learning-databases/statlog/german/german.doc")
             print("\nand place them, as-is, in the folder:")
             print("\n\t{}\n".format(os.path.abspath(os.path.join(
